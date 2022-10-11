@@ -13,3 +13,10 @@ Controller means who will have the control of the particular request and how thi
 2) Powerful configuration.
 3) MVC is quite flexible and supports rapid application development.
 
+
+**Working with Spring MVC**
+![Working of Spring MVC](https://user-images.githubusercontent.com/74822210/195158921-b6b123e6-a1ce-4952-a43c-6eeedc976ccc.jpg)
+
+Above is the standard client-server web architecture. The front Controller here is also known as Dispatcher Servlet.
+
+

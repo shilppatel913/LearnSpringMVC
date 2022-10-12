@@ -37,4 +37,12 @@ extension)
   Then we can get the data in our view file using the key
 2) We can use the model view class 
   We can use the method known as addObject(String key,Object value)
+  
+ **JSP Expression language**
+ isElIgnored should be set to false in the jsp view page
+ ${pass the key_name} 
+ 
+ if it is a collection and you want to to traverse and print each item present in it then
+ you need add a a dependency of jstl first in your pom.xml
+ and you need to add jstl uri in the jsp view page.
 

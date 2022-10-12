@@ -30,3 +30,11 @@ extension)
 5) Create views and run your server.
 
 
+**Sending Data from Controller to View**
+
+1) We can use the object of the Model class
+  We can use the method known as addAttribute(String key,Object value);
+  Then we can get the data in our view file using the key
+2) We can use the model view class 
+  We can use the method known as addObject(String key,Object value)
+

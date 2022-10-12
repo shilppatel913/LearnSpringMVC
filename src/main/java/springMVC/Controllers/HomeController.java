@@ -35,6 +35,11 @@ public class HomeController {
 		LocalDateTime now=LocalDateTime.now();
 		modelView.addObject("date",now);
 		modelView.setViewName("help");
+		List<Integer> m=new ArrayList<Integer>();
+		m.add(123);
+		m.add(3455);
+		m.add(789);
+		modelView.addObject("marks",m);
 		return modelView;
 	}
 }

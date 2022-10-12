@@ -20,3 +20,13 @@ Controller means who will have the control of the particular request and how thi
 Above is the standard client-server web architecture. The front Controller here is also known as Dispatcher Servlet.
 
 
+**SpringMVC creation steps(very important)**
+1) Configure your DispatcherServlet in your web.xml
+2) Create Spring configuration file. (With the same name as that of the servlet in the same folder). For example if the name of the servlet is spring then
+the configuration file should be named as spring-servlet.xml
+3) Create the bean of the InternalViewResolver class and fill the properties (prefix- mention the path where you are going to save your views ans suffix- mention the 
+extension)
+4)Create a controller and handle request from there. Basically this is your backend. Use the @Controller annotation to tell java that your class is a controller class.
+5) Create views and run your server.
+
+

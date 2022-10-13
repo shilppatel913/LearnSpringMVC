@@ -45,4 +45,20 @@ extension)
  if it is a collection and you want to to traverse and print each item present in it then
  you need add a a dependency of jstl first in your pom.xml
  and you need to add jstl uri in the jsp view page.
+ 
+ 
+ 
+ **Sending data from View to Controllers**
+ This is basically handling a post request and sending the data to the backend to save to the database or perform some operations on it.
+ A simple contact form is a good example for this kind of architecture.
+ When the user clicks on the submit button the params(in java it is HttpServletRequest) parameter will have all the data in it.
+ We can fetch this data in a particular controller by using the method getRequestParameter("name of the field") through which we can access every field one by one by
+ passing the name of the parameter.
+ There is one more way which will give all the data in one go and it is by using this below annotations
+ 1) @RequestParam - Will give one field at a time.
+ 2) @ModelAttribute - Will give the whole data and convert it into an object.
+
+We will be using the above two methods for sending the data from view to controller.
+Now how will the view know that to which controller it has to send the data?
+In the action attribute of the form tag we can mention the name of the controller and data can be accessed by that particular controller only.
 

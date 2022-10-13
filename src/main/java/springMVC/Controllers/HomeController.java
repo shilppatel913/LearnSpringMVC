@@ -42,4 +42,12 @@ public class HomeController {
 		modelView.addObject("marks",m);
 		return modelView;
 	}
+	
+//	
+//	@RequestMapping("/contact")
+//	public String showForm() {
+//		System.out.println("Inside contact form");
+//		return "contact";
+//	}
+	
 }

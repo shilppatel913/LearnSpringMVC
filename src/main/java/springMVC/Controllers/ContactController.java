@@ -1,5 +1,6 @@
 package springMVC.Controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import springMVC.Models.User;
+import springMVC.services.UserService;
 
 //this controller is showing of sending the data from view to controller
 //we will be using @RequestParam to get the data from the contact view
@@ -20,6 +22,10 @@ import springMVC.Models.User;
 
 @Controller
 public class ContactController {
+	
+	@Autowired
+	private UserService userService;
+	
 	@ModelAttribute
 	public void commonCode(Model model) {
 		model.addAttribute("channel","Code with harry");
@@ -37,7 +43,8 @@ public class ContactController {
 	//it will automatically map all the form data to the user object fields given the order has been kept same
 	@RequestMapping(path="/processForm",method=RequestMethod.POST)
 	public String getFormDetails(@ModelAttribute User user) {
-		
+		Integer r=this.userService.serviceSaveUser(user);
+		System.out.println("The number of rows affected and user is saved successfully"+r);
 		return "success";
 	}
 	

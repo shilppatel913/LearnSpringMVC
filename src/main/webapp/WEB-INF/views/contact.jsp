@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <%@ page isELIgnored="false" %>
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,6 +9,8 @@
     <title>Bootstrap demo</title>
   </head>
  <body>
+ 	<h1>${channel}</h1>
+ 	<h1>${rating}</h1>
  	<div class="container">
 >     	<form action="processForm" method="post">
 >     		<div class="mb-3">

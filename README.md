@@ -70,3 +70,11 @@ view -> controller -> service layer -> userdao -> hibernateTemplate -> database
 Enable the <context:component-scan base-package="" /> to enable all your annotations and autowiring(no need to explicitly create refs)
 and do not forget to enable the transactional annotation to perform write operations from your application into the database.
 
+
+**Redirect in SpringMVC**
+There are two ways to redirect from a particular url,
+1) Use Redirect Prefix 
+    Syntax : you can return from the controller return "redirect:/url"
+ 2) Use Redirect View
+  Mention the return type of your controller as RedirectView and then make object and then fire this method obj.setUrl and return that object.
+

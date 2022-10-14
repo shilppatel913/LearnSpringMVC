@@ -62,3 +62,11 @@ We will be using the above two methods for sending the data from view to control
 Now how will the view know that to which controller it has to send the data?
 In the action attribute of the form tag we can mention the name of the controller and data can be accessed by that particular controller only.
 
+
+**Standard way to store the form data into the database using spring ORM*
+
+If user is your entity and controller is your controller class then below is the given data flow
+view -> controller -> service layer -> userdao -> hibernateTemplate -> database
+Enable the <context:component-scan base-package="" /> to enable all your annotations and autowiring(no need to explicitly create refs)
+and do not forget to enable the transactional annotation to perform write operations from your application into the database.
+

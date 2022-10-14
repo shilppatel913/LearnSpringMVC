@@ -26,6 +26,7 @@ public class ContactController {
 	@Autowired
 	private UserService userService;
 	
+	 
 	@ModelAttribute
 	public void commonCode(Model model) {
 		model.addAttribute("channel","Code with harry");

@@ -85,4 +85,13 @@ There are two ways to redirect from a particular url,
   When a user submits a form which has invalid values or leaves some of the fields empty then we can show this error to the user by using the interface known as 
   BindingResult which implements the Error interface and can be used in the parameters to check for error by implementing it's boolean method hasErrros().
   The error can be shown near the form itself by adding the form errors tag in your jsp file. You will have to import this tag library.
+  
+  
+  
+  
+  
+  **How to enable javascript,css and serve static images in a jsp file**
+ Standard way is to make a resources folder in the WEB-INF folder. After that you need to add this resource path in your xml file using mvc. After that you have to
+ add one tag library in your jsp where you want to add your css and js and images and then with the help of the prefix you can add the url of your files.
+ 
 

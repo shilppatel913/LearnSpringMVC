@@ -77,4 +77,12 @@ There are two ways to redirect from a particular url,
     Syntax : you can return from the controller return "redirect:/url"
  2) Use Redirect View
   Mention the return type of your controller as RedirectView and then make object and then fire this method obj.setUrl and return that object.
+  
+  
+  
+  
+  **How to handle form errors in SpringMVC**
+  When a user submits a form which has invalid values or leaves some of the fields empty then we can show this error to the user by using the interface known as 
+  BindingResult which implements the Error interface and can be used in the parameters to check for error by implementing it's boolean method hasErrros().
+  The error can be shown near the form itself by adding the form errors tag in your jsp file. You will have to import this tag library.
 

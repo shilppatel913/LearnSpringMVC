@@ -1,79 +1,14 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    	
-			.main-card{
-			    width:500px;
-			    height:700px;
-			    margin:auto;
-			    padding-top:13px;
-			}
-			.main-card-body{
-			    font-size:16px;
-			    height:544px;
-			}
-			h2{
-			    text-align: center;
-			    padding-top:7px;
-			}
-			label{
-			    display:block;
-			    margin:3px;
-			}
-			.form-group{
-			    margin:5px;
-			    padding:5px;
-			}
-			.prop{
-			    border:none;
-			    height:25px;
-			    width:468px;
-			    padding:5px;
-			}
-			.courses{
-			    border:none;
-			    height:77px;
-			    width:478px;
-			    padding:5px;
-			}
-			.student-type{
-			    border:none;
-			    height:25px;
-			    width:478px;
-			    padding:5px;
-			}
-			
-			.radioin label{
-			    display:inline;
-			}
-			.radioin{
-			    margin-left:10px;
-			}
-			.btn{
-			    text-align:center;
-			    margin-top:16px;
-			}
-			.btn input{
-			    border:none;
-			    height:26px;
-			    width:66px;
-			    background-color:lightblue
-			}
-			.btn input:hover{
-			    background-color:lightgray;
-			}
-			.alert{
-				background-color:red;
-			}
-    </style>
+    <link href="<c:url value="/resources/css/style.css"></c:url>"></link>
+    <script src="<c:url value="/resources/js/demo.js"></c:url>" ></script>
 </head>
 <body>
     <div class="container">

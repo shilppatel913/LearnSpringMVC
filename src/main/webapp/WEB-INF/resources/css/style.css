@@ -1,0 +1,63 @@
+.main-card{
+			    width:500px;
+			    height:700px;
+			    margin:auto;
+			    padding-top:13px;
+			}
+			.main-card-body{
+			    font-size:16px;
+			    height:544px;
+			}
+			h2{
+			    text-align: center;
+			    padding-top:7px;
+			}
+			label{
+			    display:block;
+			    margin:3px;
+			}
+			.form-group{
+			    margin:5px;
+			    padding:5px;
+			}
+			.prop{
+			    border:none;
+			    height:25px;
+			    width:468px;
+			    padding:5px;
+			}
+			.courses{
+			    border:none;
+			    height:77px;
+			    width:478px;
+			    padding:5px;
+			}
+			.student-type{
+			    border:none;
+			    height:25px;
+			    width:478px;
+			    padding:5px;
+			}
+			
+			.radioin label{
+			    display:inline;
+			}
+			.radioin{
+			    margin-left:10px;
+			}
+			.btn{
+			    text-align:center;
+			    margin-top:16px;
+			}
+			.btn input{
+			    border:none;
+			    height:26px;
+			    width:66px;
+			    background-color:lightblue
+			}
+			.btn input:hover{
+			    background-color:lightgray;
+			}
+			.alert{
+				background-color:red;
+			}

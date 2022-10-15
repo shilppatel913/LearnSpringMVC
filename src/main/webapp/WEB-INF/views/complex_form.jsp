@@ -1,7 +1,8 @@
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,6 +70,9 @@
 			.btn input:hover{
 			    background-color:lightgray;
 			}
+			.alert{
+				background-color:red;
+			}
     </style>
 </head>
 <body>
@@ -76,6 +80,9 @@
             <div class="main-card">
                 <div class="main-card-body">
                     <h2>Complex Form</h2>
+                    <div class="alert alert-danger" role="alert">
+  						<form:errors path="student.*" />
+							</div>
                     <form action="subComplex" method="post">
                         <div class="form-group">
                             <label>Your Name</label>
@@ -83,7 +90,7 @@
                         </div>
                         <div class="form-group">
                             <label >Your id</label>
-                            <input class="prop" name="stdId" type="number" placeholder="Enter your id">
+                            <input class="prop" name="stdId" type="text" placeholder="Enter your id">
                         </div>
                         <div class="form-group">
                             <label >Your DOB</label>

@@ -10,6 +10,7 @@ public class Student {
 	private List<String> subjects;
 	private String stdGender;
 	private String stdType;
+	private Address address;
 	public String getStdName() {
 		return stdName;
 	}
@@ -24,6 +25,12 @@ public class Student {
 	}
 	public String getStdDate() {
 		return stdDate;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 	public void setStdDate(String stdDate) {
 		this.stdDate = stdDate;
@@ -49,7 +56,8 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [stdName=" + stdName + ", stdId=" + stdId + ", stdDate=" + stdDate + ", subjects=" + subjects
-				+ ", stdGender=" + stdGender + ", stdType=" + stdType + "]";
+				+ ", stdGender=" + stdGender + ", stdType=" + stdType + ", address=" + address + "]";
 	}
+	
 	
 }

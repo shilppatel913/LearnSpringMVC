@@ -115,6 +115,15 @@
                                 <option value="New">New Student</option>
                             </select>
                         </div>
+                        
+                        <div class="form-group">
+                        	<label> Your Address</label>
+                        	<label> Street</label>
+                        	<input type="text" name="address.street" />
+                        	<label>City</label>
+                        	<input type="text" name="address.city" />
+                        </div>
+                       
                         <div class="btn">
                             <input type="submit" value="Submit" />
                         </div>

@@ -19,6 +19,6 @@ public class ComplexFormController {
 	@RequestMapping(path="/subComplex",method=RequestMethod.POST)
 	public String handleForm(@ModelAttribute Student student) {
 		System.out.println(student);
-		return "";
+		return "datashow";
 	}
 }

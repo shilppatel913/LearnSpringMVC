@@ -24,6 +24,12 @@
  		<!-- to enable the our controller -->
  		<context:component-scan base-package="springMVC" />
  		
+ 		
+ 		<!-- creating bean for implementation class of the MultiPartResolver that is CommonMultiPartResolver
+ 		MultiPartResolver detects multimedia files being uploaded -->
+ 		
+ 		<bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" name="multipartResolver" />
+ 		
  
  	<!-- This is our configuration file and now let us create a bean for our view resolver -->
  	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" name="viewResolver">

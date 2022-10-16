@@ -94,4 +94,9 @@ There are two ways to redirect from a particular url,
  Standard way is to make a resources folder in the WEB-INF folder. After that you need to add this resource path in your xml file using mvc. After that you have to
  add one tag library in your jsp where you want to add your css and js and images and then with the help of the prefix you can add the url of your files.
  
+ 
+ **FileUpload using springMVC**
+ We can do the file uploading task by integrating the commons file upload and commons io dependency in our maven project. Hence whatever the user uploads as a file 
+ will have the type of the implementation class of the MultiPartResolver interface.
+ 
 

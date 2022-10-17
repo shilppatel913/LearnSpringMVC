@@ -120,4 +120,20 @@ can also be returned so that the client can also know that an error has occured 
  methods using the @ExceptionHandler annotation. Spring MVC has to know that this particular class constitutes all the exception handler method and for that we need to
  label the class with @ControllerAdvice annotation and exception will be handled for all the controllers.
  
+ 
+ 
+ **Interceptors(pre,post,afterCompletion) in Spring MVC**
+ 
+ Spring MVC Interceptors are used to perform some task either before the request is handled or after the request has been processed or just before sending the response. Hence it is divided into three methods as mentioned below
+ 1)preHandler
+ 2)postHandler
+ 3)afterCompletion
+ 
+ ![Interceptor_architecture](https://user-images.githubusercontent.com/74822210/196161589-7985b716-0032-4fc6-a8a4-d3ca9e7a7ffd.jpg)
+ 
+ Above is the given architecture or places of where exactly all these interceptor methods can be used while handling a request and sending a response.
+ HanlderInterceptor has all these methods and we have it's implementation class HandlerInterceptorAdaptor which we can extend to get all these methods. You need to declare a bean of your user defined class which is extending the HandlerInterceptorAdaptor class.
+
+
+ 
 

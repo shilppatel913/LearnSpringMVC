@@ -133,6 +133,9 @@ can also be returned so that the client can also know that an error has occured 
  
  Above is the given architecture or places of where exactly all these interceptor methods can be used while handling a request and sending a response.
  HanlderInterceptor has all these methods and we have it's implementation class HandlerInterceptorAdaptor which we can extend to get all these methods. You need to declare a bean of your user defined class which is extending the HandlerInterceptorAdaptor class.
+ 
+ If  a particular method say preHandler method returns true then the request will move forward but if it returns false then the request will not be carried forward any
+ further and the response will be sent from the preHandler method itself
 
 
  

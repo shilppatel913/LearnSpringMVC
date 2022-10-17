@@ -69,5 +69,18 @@
  		<property name="sessionFactory" ref="localSession"></property>
  	</bean>
  	
+ 	
+ 	
+ 	<!-- let us define all the interceptors and map them to a particular url -->
+ 	<mvc:interceptors>
+ 		<mvc:interceptor>
+ 				<mvc:mapping path="/responseInterceptor"></mvc:mapping>
+ 				<bean class="springMVC.Controllers.MyInterceptor"></bean>
+ 		
+ 		</mvc:interceptor>
+ 		
+ 	</mvc:interceptors>
+ 	
+ 	
 </beans>
  

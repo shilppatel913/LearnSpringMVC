@@ -109,5 +109,12 @@ annotation.
 public String func(@PathVariable("userId") int id){      //Now the userId has been binded to the id variable present in the params.
   System.out.println("My user id is"+id);
 }
+
+
+
+**Exception Handling n SpringMVC**
+You can use @ExceptionHandler(value=NullPointerException.class) annotation and in the value attribute of the annotation you can mention the exception to be handled.
+To handle all the exceptions you can use the parent class Exception.class in the value attribute and any exception occuring on the server side will be handled. A view
+can also be returned so that the client can also know that an error has occured which is easy to understand.
  
 

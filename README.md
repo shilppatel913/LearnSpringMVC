@@ -84,7 +84,14 @@ There are two ways to redirect from a particular url,
   **How to handle form errors in SpringMVC**
   When a user submits a form which has invalid values or leaves some of the fields empty then we can show this error to the user by using the interface known as 
   BindingResult which implements the Error interface and can be used in the parameters to check for error by implementing it's boolean method hasErrros().
-  The error can be shown near the form itself by adding the form errors tag in your jsp file. You will have to import this tag library.
+  The error can be shown near the form itself by adding the form errors tag in your jsp file. You will have to import this tag library. This method is controller
+  specific that means it will run only in the controller where these exception handler methods are present. For other controllers it will not work. 
+  
+  
+ **To create a centralized exception Handler**
+ We can create a different class which handles exceptions for all the controllers present in our project. Inside this class we define all the above exception handler
+ methods using the @ExceptionHandler annotation. Spring MVC has to know that this particular class constitutes all the exception handler method and for that we need to
+ label the class with @ControllerAdvice annotation and exception will be handled for all the controllers.
   
   
   

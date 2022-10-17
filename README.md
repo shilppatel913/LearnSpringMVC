@@ -99,4 +99,15 @@ There are two ways to redirect from a particular url,
  We can do the file uploading task by integrating the commons file upload and commons io dependency in our maven project. Hence whatever the user uploads as a file 
  will have the type of the implementation class of the MultiPartResolver interface.
  
+ 
+ **How to get the slug from the uri template to the controller using @PathVariable Annotation**
+ 
+@PathVariable annotation is used to bind the URI template variable(slug) to the method parameter. Below is the simple demonstration of how to use the @PathVariable
+annotation.
+
+@RequestMapping("/user/{userId}")   //this userId is the slug and is known as the URI template variable
+public String func(@PathVariable("userId") int id){      //Now the userId has been binded to the id variable present in the params.
+  System.out.println("My user id is"+id);
+}
+ 
 

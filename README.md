@@ -136,6 +136,8 @@ can also be returned so that the client can also know that an error has occured 
  
  If  a particular method say preHandler method returns true then the request will move forward but if it returns false then the request will not be carried forward any
  further and the response will be sent from the preHandler method itself
+ 
+ To map the interceptor to a particular path we have to use the <mvc:mapping path="/welcome"> in our configuration xml file (Most important step).
 
 
  
